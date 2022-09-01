@@ -25,3 +25,24 @@ export const fetchProductByCategory = (category) => {
     .then((res) => res.data)
     .catch((err) => err);
 };
+
+export const fetchProductById = (productId) => {
+  return axios
+    .get(`${API_PRODUCTS}/${productId}`)
+    .then((res) => res.data)
+    .catch((err) => err);
+};
+
+export const createProduct = (product) => {
+  return axios
+    .post(API_PRODUCTS, product)
+    .then((res) => res.data)
+    .catch((err) => err);
+};
+
+export const updateProduct = (productId, product) => {
+  return axios
+    .patch(`${API_PRODUCTS}${productId}`, product)
+    .then((res) => res.data)
+    .catch((err) => err);
+};
