@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Product from "./pages/add-product";
+import AddProductPage from "./pages/add-product";
+import UpdateProductPage from "./pages/update-product";
 import Home from "./pages/home";
 
 import Header from "./components/Header";
@@ -11,8 +12,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="add-product" element={<Product />} />
-        <Route path="edit-product/:id" element={<Product />} />
+        <Route path="add-product" element={<AddProductPage />} />
+        <Route path="edit-product/:id" element={<UpdateProductPage />} />
       </Routes>
     </div>
   );

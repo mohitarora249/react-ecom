@@ -8,12 +8,15 @@ const Header = () => {
         <span className="font-semibold text-xl">Assignment</span>
       </div>
       <div className="text-white text-sm font-bold">
-        <Link to="/" className="inline-block py-2 hover:border-b border-white">
+        <Link
+          to="/"
+          className="inline-block py-2 hover:bg-white hover:text-black rounded px-3"
+        >
           Home
         </Link>
         <Link
           to="/add-product"
-          className="inline-block py-2 ml-4 hover:border-b border-white"
+          className="inline-block py-2 ml-4 hover:bg-white hover:text-black rounded  px-3"
         >
           Add Product
         </Link>
