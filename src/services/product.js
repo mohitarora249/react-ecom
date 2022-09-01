@@ -42,7 +42,7 @@ export const createProduct = (product) => {
 
 export const updateProduct = (productId, product) => {
   return axios
-    .patch(`${API_PRODUCTS}${productId}`, product)
+    .patch(`${API_PRODUCTS}/${productId}`, product)
     .then((res) => res.data)
     .catch((err) => err);
 };

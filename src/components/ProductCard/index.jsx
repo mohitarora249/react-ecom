@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
       </div>
       <div className="px-6 pt-4 pb-5">
         <Link
-          to={`/edit-product/${product.id}`}
+          to={`/update-product/${product.id}`}
           className="bg-red-500 p-4 rounded"
         >
           Edit Product
