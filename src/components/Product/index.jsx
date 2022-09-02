@@ -8,7 +8,7 @@ export default function AddProduct({
       <div className="mb-4">
         <label
           className="block text-gray-700 text-sm font-bold mb-2"
-          for="productName"
+          htmlFor="productName"
         >
           Product Name
         </label>
@@ -25,7 +25,7 @@ export default function AddProduct({
       <div className="mb-4">
         <label
           className="block text-gray-700 text-sm font-bold mb-2"
-          for="price"
+          htmlFor="price"
         >
           Price
         </label>
@@ -42,7 +42,7 @@ export default function AddProduct({
       <div className="mb-4">
         <label
           className="block text-gray-700 text-sm font-bold mb-2"
-          for="description"
+          htmlFor="description"
         >
           Description
         </label>
